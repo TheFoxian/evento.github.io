@@ -1,0 +1,183 @@
+.container-fluid {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cmn-btn {
+    background: $purple;
+    text-decoration: none;
+    border-radius: 0;
+    border: none;
+    display: inline-block;
+    @extend .trans-500;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 18px 30px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 101%;
+        height: 101%;
+        background: $blue;
+        z-index: 1;
+        transition: all .5s cubic-bezier(.5, 1.6, .4, .7);
+        transform-origin: left top;
+        transform: scaleX(0);
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:hover::before {
+        transform: scaleX(1);
+        z-index: -1;
+        color: white;
+    }
+
+    &.btn-yellow {
+        background: $light;
+        color: $purple;
+        font-size: 1.2rem;
+
+        &::before {
+            background: $yellow;
+            text-decoration: none;
+        }
+    }
+
+    &.btn-dark {
+        background: $light;
+        color: $purple;
+        font-size: 1.2rem;
+
+        &::before {
+            background: $dark;
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: $light;
+        }
+    }
+
+    &.btn-bg-dark {
+        background: $dark;
+        color: $light;
+        font-size: 1.2rem;
+
+        &::before {
+            background: $light;
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: $purple;
+        }
+    }
+
+    &.btn-light {
+        background: $light;
+        color: $purple;
+        font-size: 1.2rem;
+
+        &:hover {
+            color: $light;
+        }
+    }
+}
+
+.f-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trans-300 {
+    transition: all .3s ease;
+}
+.trans-500 {
+    transition: all .5s ease;
+}
+
+.o-cover {
+    object-fit: cover;
+}
+
+.o-contain {
+    object-fit: contain;
+}
+
+a {
+    @extend .trans-300;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.unstyled-list {
+    list-style: none;
+}
+
+.text-grey {
+    color: $grey;
+}
+
+.text-dark-blue {
+    color: $dark-blue;
+}
+
+.text-yellow {
+    color: $yellow;
+}
+
+.bg-light {
+    background: $light !important;
+}
+
+
+
+
+// margin
+
+.mb-50 {
+    margin-bottom: 3.125rem !important;
+}
+
+.mt-50 {
+    margin-top: 3.125rem !important;
+}
+
+.mb-100 {
+    margin-bottom: 6.25rem !important;
+}
+
+.mt-100 {
+    margin-top: 6.25rem !important;
+}
+
+//padding
+
+.pt-150 {
+    padding-top: 9.375rem !important;
+}
+
+.pb-150 {
+    padding-bottom: 9.375rem !important;
+}
+
+.pt-200 {
+    padding-top: 12.5rem !important;
+}
+
+.pb-200 {
+    padding-bottom: 12.5rem !important;
+}

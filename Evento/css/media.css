@@ -1,0 +1,108 @@
+@media (min-width: 576px) {
+  .container-fluid {
+    max-width: 570px; } }
+
+@media (min-width: 768px) {
+  .container-fluid {
+    max-width: 740px; } }
+
+@media (min-width: 992px) {
+  .container-fluid {
+    max-width: 970px; }
+  header .btn {
+    margin-right: 1rem;
+    margin-left: 2rem; }
+  .dropdown .dropdown-menu {
+    transition: all .5s ease;
+    top: 97%;
+    padding-bottom: 2rem;
+    border-radius: 0; }
+    .dropdown .dropdown-menu a {
+      transition: all .3s ease; }
+      .dropdown .dropdown-menu a:hover {
+        background: none;
+        margin-left: 5px; }
+  .dropdown:hover > .dropdown-menu {
+    display: block; } }
+
+@media (min-width: 1200px) {
+  .container-fluid {
+    max-width: 1170px; } }
+
+@media (min-width: 1400px) {
+  .container-fluid {
+    max-width: 1645px; } }
+
+@media (max-width: 1199px) {
+  html {
+    font-size: 15px; }
+  nav .navbar-nav {
+    margin-right: 0 !important; }
+  nav .nav-item {
+    padding: 30px 15px !important; }
+  nav .btn {
+    margin-left: 1rem; }
+  .about-img-content .bg-img img {
+    width: 100% !important; }
+  .about-img-content .top-img {
+    left: -15% !important; } }
+
+@media (max-width: 991px) {
+  html {
+    font-size: 14px; }
+  nav {
+    margin: 1.2rem 0; }
+    nav .navbar-nav {
+      margin-top: 1rem; }
+    nav .nav-item {
+      padding: 0 0 1rem 0 !important; }
+    nav .btn {
+      margin-left: auto; }
+    nav .navbar-collapse {
+      overflow: auto !important;
+      transform: translateX(125%); }
+      nav .navbar-collapse.show {
+        transform: translateX(0); }
+  .banner-caption {
+    max-width: 88% !important; }
+  .about-container-content {
+    padding-right: 1rem; }
+  .about-img-content {
+    margin-top: 3rem; }
+    .about-img-content .bg-img {
+      margin-left: 0 !important; }
+      .about-img-content .bg-img img {
+        width: 80% !important;
+        float: left !important; } }
+
+@media (max-width: 767px) {
+  html {
+    font-size: 12px; }
+  p,
+  a {
+    font-size: 1.3rem !important; }
+  .banner-caption {
+    max-width: 100% !important; }
+  .home-about .about-container-content h2 {
+    font-size: 2.5rem; }
+  .home-about .about-container-content .btn {
+    font-size: 1.5rem; }
+  .schedule .card-body {
+    font-size: 1.3rem !important; }
+  .footer-bottom .container {
+    flex-direction: column; } }
+
+@media (max-width: 575px) {
+  html {
+    font-size: 11px; }
+  .banner {
+    min-height: 45.45rem; }
+  .team p,
+  .team a {
+    font-size: 1.7rem !important; }
+  .schedule p {
+    font-size: 1.5rem !important; }
+  .schedule .card-body {
+    font-size: 1.3rem !important; }
+  .pricing .card-body:hover {
+    transform: scale(1) !important; } }
